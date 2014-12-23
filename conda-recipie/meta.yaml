@@ -1,0 +1,29 @@
+package:
+    name: carchivetools
+    version: 2.0.9
+
+source:
+    git_url: ../
+
+build:
+    number: 1
+
+requirements:
+    build:
+        - python
+        - setuptools
+        - numpy
+        - protobuf
+    run:
+        - python
+        - numpy
+        - twisted
+        - protobuf
+
+test:
+    imports:
+        - carchive
+
+about:
+    home: https://github.com/epicsdeb/carchivetools
+    summary: Channel Archiver shell tools and library
