@@ -7,7 +7,7 @@ source:
     git_rev: conda-1.9
 
 build:
-    number: 3
+    number: 4
 
 requirements:
     build:
@@ -15,11 +15,13 @@ requirements:
         - setuptools
         - numpy
         - protobuf
+        - service_identity
     run:
         - python
         - numpy
         - twisted
         - protobuf
+        - service_identity
 
 test:
     imports:
